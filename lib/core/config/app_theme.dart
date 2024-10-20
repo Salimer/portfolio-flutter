@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../constants/app_colors.dart';
+
 class AppTheme {
   static ThemeData _baseTheme() {
     final ThemeData theme = ThemeData.light();
     return theme.copyWith(
       textTheme: theme.textTheme.apply(),
+      primaryColor: AppColors.identity,
     );
   }
 
@@ -14,6 +17,9 @@ class AppTheme {
 
   static ThemeData get darkTheme => _baseTheme().copyWith(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: Colors.white,
       );
 }
+
+
+// #6936f5
