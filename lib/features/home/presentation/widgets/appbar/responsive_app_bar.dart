@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/layout.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/constants/layout.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
@@ -32,7 +33,7 @@ class ResponsiveAppBar extends StatelessWidget {
                 children: [
                   Text("My Logo"),
                   IconButton(
-                    icon: Icon(Icons.menu),
+                    icon: Icon(Icons.menu, color: AppColors.identity),
                     onPressed: () {},
                   ),
                 ],
