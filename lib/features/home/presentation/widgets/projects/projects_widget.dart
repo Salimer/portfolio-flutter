@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/layout.dart';
 import '../../../../../core/constants/text_styles.dart';
+import '../custom_outlined_button.dart';
 import 'grey_circle.dart';
 import 'project_technology_chip.dart';
 
@@ -80,30 +81,10 @@ class Projects_widget extends StatelessWidget {
               ],
             ),
             const SizedBox(height: Layout.mediumSpace),
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                   vertical: Layout.mediumSpace),
-              child: OutlinedButton(
-                onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: Layout.largeSpace,
-                    horizontal: Layout.mediumSpace,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(Layout.smallRadius),
-                  ),
-                  side: const BorderSide(
-                    color: AppColors.identity,
-                  ),
-                ),
-                child: Text(
-                  "See project",
-                  style: TextStyles.medium16
-                      .copyWith(color: AppColors.identity),
-                ),
-              ),
+              child: CustomOutlinedButton(text: "See project"),
             )
           ],
         ),
