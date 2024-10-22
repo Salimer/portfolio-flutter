@@ -8,6 +8,7 @@ import '../widgets/projects/grey_circle.dart';
 import '../widgets/projects/project_technology_chip.dart';
 import '../widgets/appbar/responsive_app_bar.dart';
 import '../widgets/projects/projects_widget.dart';
+import '../widgets/social_media_icons.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -30,15 +31,33 @@ class HomeView extends StatelessWidget {
           const SizedBox(height: Layout.xLargeSpace),
           // About me section
           Container(
+            padding: const EdgeInsets.symmetric(
+                vertical: Layout.xLargeSpace,
+                horizontal: Layout.horizontalPadding),
             decoration: const BoxDecoration(
               color: Colors.white,
-            ),
-            child: Text(
-              "I’m Alexandra.\nGlad to see you!",
-              style: TextStyles.bold40.copyWith(
-                color: AppColors.identity[900],
+              borderRadius: BorderRadiusDirectional.only(
+                topEnd: Radius.circular(Layout.bigRadius),
               ),
-              textAlign: TextAlign.start,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "About Myself",
+                  style: TextStyles.bold40.copyWith(
+                    color: AppColors.identity[900],
+                  ),
+                  textAlign: TextAlign.start,
+                ),
+                const SizedBox(height: Layout.mediumSpace),
+                Text(
+                  "I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.",
+                  style: TextStyles.regular16,
+                ),
+                const SizedBox(height: Layout.mediumSpace),
+                const SocialMediaIcons(),
+              ],
             ),
           ),
         ],

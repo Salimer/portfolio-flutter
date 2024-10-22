@@ -41,11 +41,6 @@ class IntroWidget extends StatelessWidget {
             style: TextStyles.regular16,
           ),
           const SizedBox(height: Layout.mediumSpace),
-          Text(
-            "LET'S CONNECT",
-            style: TextStyles.medium20.copyWith(color: AppColors.identity),
-          ),
-          const SizedBox(height: Layout.mediumSpace),
           const SocialMediaIcons(),
           const SizedBox(height: Layout.xLargeSpace),
         ],
