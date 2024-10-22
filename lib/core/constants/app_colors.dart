@@ -2,41 +2,26 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const MaterialColor identity = MaterialColor(
-    0xFF6936F5, // Primary color (500)
+    0xFF6070ff, // Primary color (500)
     <int, Color>{
-      50: Color(0xFFEDE4FF), // Lightest
-      100: Color(0xFFD2BBFF), // Lighter
-      200: Color(0xFFB392FF), // Light
-      300: Color(0xFF9469FF), // Light-medium
-      400: Color(0xFF8253F5), // Slightly lighter than the primary
-      500: Color(0xFF6936F5), // Primary
-      600: Color(0xFF5F32DD), // Slightly darker
-      700: Color(0xFF522DC4), // Darker
-      800: Color(0xFF4629AC), // Dark
-      900: Color(0xFF341F87), // Darkest
+      50: Color(0xFFEBEBFF), // Lightest (added #EBEBFF here)
+      100: Color(0xFFC5CDFF), // Lighter
+      200: Color(0xFFA0ADFF), // Light
+      300: Color(0xFF7F8CFF), // Light-medium
+      400: Color(0xFF6076FF), // Slightly lighter than the primary
+      500: Color(0xFF6070FF), // Primary
+      600: Color(0xFF5666E5), // Slightly darker
+      700: Color(0xFF4A59CC), // Darker
+      800: Color(0xFF344563), // Dark
+      900: Color(0xFF172B4D), // Darkest
     },
   );
 
-  static const MaterialColor red = MaterialColor(
-    0xffe23e3e,
-    <int, Color>{
-      500: Color(0xffe23e3e),
-      400: Color(0xffe86565),
-      300: Color(0xffee8b8b),
-      200: Color(0xfff3b2b2),
-    },
-  );
-
-  static const MaterialColor orange = MaterialColor(
-    0xffff9c00,
-    <int, Color>{
-      500: Color(0xffff9c00),
-      400: Color(0xffffa61a),
-      200: Color(0xffffce80),
-      100: Color(0xffffe1b3),
-      50: Color(0xffFFF5E6)
-    },
-  );
+  static const Color backgroundThemeColor = Color(0xfff7f7f9);
+  static const Color icons = Color(0xff505F79);
+  static const Color border = Color(0xffdfe1e6);
+  static const Color smallGreyCircle = Color(0xffc1c7d0);
+  static const Color greyText = Color(0xff7a869a);
 
   static const Color grey1 = Color(0xff49465f);
   static const Color grey2 = Color(0xff858494);

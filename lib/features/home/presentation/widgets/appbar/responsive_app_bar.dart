@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/layout.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/constants/layout.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
@@ -10,12 +11,12 @@ class ResponsiveAppBar extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 10,
-            spreadRadius: 5,
-            offset: Offset(0, 3),
-          ),
+          // BoxShadow(
+          //   color: Colors.black.withOpacity(0.5),
+          //   blurRadius: 10, // The blur radius for softness
+          //   spreadRadius: 5, // Spread to make the shadow larger
+          //   offset: Offset(0, 3),
+          // ),
         ],
       ),
       child: LayoutBuilder(
@@ -26,15 +27,15 @@ class ResponsiveAppBar extends StatelessWidget {
               height: kToolbarHeight,
               padding:
                   EdgeInsets.symmetric(horizontal: Layout.horizontalPadding),
-              color: Colors.blue,
+              color: Colors.white,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  Text("My Logo"),
                   IconButton(
-                    icon: Icon(Icons.menu),
+                    icon: Icon(Icons.menu, color: AppColors.identity),
                     onPressed: () {},
                   ),
-                  Text("My Logo"),
                 ],
               ),
             );
