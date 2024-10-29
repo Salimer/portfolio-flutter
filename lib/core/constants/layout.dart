@@ -12,4 +12,7 @@ class Layout {
   static const double bigRadius = 100;
   static const double mediumRadius = 16;
   static const double smallRadius = 8;
+
+  // Height
+  static const double technologyCardHeight = 80;
 }

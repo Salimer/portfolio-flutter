@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/layout.dart';
@@ -39,11 +38,6 @@ class IntroWidget extends StatelessWidget {
           Text(
             "I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.",
             style: TextStyles.regular16,
-          ),
-          const SizedBox(height: Layout.mediumSpace),
-          Text(
-            "LET'S CONNECT",
-            style: TextStyles.medium20.copyWith(color: AppColors.identity),
           ),
           const SizedBox(height: Layout.mediumSpace),
           const SocialMediaIcons(),
