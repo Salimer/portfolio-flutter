@@ -36,7 +36,7 @@ class StackItemWidget extends ConsumerWidget {
           ref.read(isLanguagesDropdownExpandedProvider.notifier).open();
         };
       case StackDropdownTypesEnum.tools:
-        title = "Tools";
+        title = "Tools or Skills";
         isExpanded = ref.watch(isToolsDropdownExpandedProvider);
         list = tools();
         onTap = () {

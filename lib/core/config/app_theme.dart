@@ -13,12 +13,12 @@ class AppTheme {
   }
 
   static ThemeData get lightTheme => _baseTheme().copyWith(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: AppColors.backgroundThemeColor,
       );
 
   static ThemeData get darkTheme => _baseTheme().copyWith(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: AppColors.backgroundThemeColor,
       );
 }
 
