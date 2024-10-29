@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants/app_colors.dart';
@@ -43,17 +42,20 @@ class ContactMeWidget extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: Layout.mediumSpace),
-            const CustomTextFormField(),
+            const CustomTextFormField(hint: 'Name'),
             const SizedBox(height: Layout.mediumSpace),
-            const CustomTextFormField(),
+            const CustomTextFormField(hint: 'Email'),
             const SizedBox(height: Layout.mediumSpace),
-            const CustomTextFormField(),
+            const CustomTextFormField(
+              hint: 'Write your message',
+              maxLines: 4,
+            ),
             const SizedBox(height: Layout.mediumSpace),
             const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 CustomOutlinedButton(
-                  text: 'Submit',
+                  text: 'Get in touch',
                   // onPressed: () {},
                 ),
               ],
