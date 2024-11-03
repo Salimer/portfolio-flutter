@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_template/core/config/app_theme.dart';
-import 'package:flutter_template/test.dart';
 
 import 'core/utils/observers/navigator_observer.dart';
-import 'features/home/presentation/views/home_view.dart';
+import 'screens/about_screen.dart';
+import 'screens/contact_screen.dart';
+import 'screens/home_screen.dart';
+import 'screens/projects_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,20 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      locale: const Locale('en'), //Locale('ar'),
-      theme: AppTheme.lightTheme,
-      themeMode: ThemeMode.system,
-      darkTheme: AppTheme.darkTheme,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
+      title: 'Portfolio of Salim Bamahfoodh',
       debugShowCheckedModeBanner: false,
-      navigatorObservers: [
-        LoggerNavigatorObserver(),
-      ],
-      initialRoute: '/home',
+      theme: AppTheme.lightTheme,
+      initialRoute: '/',
       routes: {
-        '/home': (context) => const HomeView(),
+        '/': (context) => const HomeScreen(),
+        '/about': (context) => const AboutScreen(),
+        '/projects': (context) => ProjectsScreen(),
+        '/contact': (context) => const ContactScreen(),
       },
     );
   }
